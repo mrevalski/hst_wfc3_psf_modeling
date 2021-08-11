@@ -11,3 +11,5 @@ Empirical: The code will generate a PSF model by stacking STScI PSFs from a driz
 The second decision is for the user to select whether to create a PSF model of the entire image, or create independent PSF models of the inner and outer portions of their science image. This is useful for mosaics with a longer effective exposure time in the center and a shorter exposure time near the edges.
 
 Please send questions, comments, and suggestions to [Mitchell Revalski](https://www.mitchellrevalski.com). Thank you, and have a nice day!
+
+Mitchell Revalski gratefully acknowledges Marc Rafelski and Laura Prichard for helping to improve this code.
