@@ -1,5 +1,5 @@
-# Fit the data using either Gaussian2D or Moffatt2D functions on the interpolated images.
-# e.g. fit_profile(model_type = 'gaussian/moffatt', input_data = image_array, fit_info = True/False)
+# Fit the data using either Gaussian2D or Moffat2D functions on the interpolated images.
+# e.g. fit_profile(model_type = 'gaussian/moffat', input_data = image_array, fit_info = True/False)
 
 def fit_profile_parallel(model_type, input_data, fit_info, star_ids, rpix, interp_grid_steps, max_iterations, verbal):
 
@@ -29,7 +29,7 @@ def fit_profile_parallel(model_type, input_data, fit_info, star_ids, rpix, inter
     # Declare the type of model to fit.
     if model_type == 'gaussian':
         fit_model = models.Gaussian2D(amplitude, x_mean=interp_grid_steps*rpix, y_mean=interp_grid_steps*rpix)
-    if model_type == 'moffatt':
+    if model_type == 'moffat':
         fit_model = models.Moffat2D(amplitude, x_0=interp_grid_steps*rpix, y_0=interp_grid_steps*rpix)
 
     # Generate the model array.
